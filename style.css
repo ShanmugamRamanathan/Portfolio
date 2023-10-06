@@ -1,0 +1,1531 @@
+:root{
+    --blue:#eff6fd;
+    /* --blue:#f3f3f3; */
+}
+*::selection{
+    color: white;
+    background: crimson;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.leftMenu{
+    margin: 0;
+    background-color: var(--blue);
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    flex:0.5;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.circle{
+    padding-top: 50px;
+    /* background-size: cover;
+    background-position: center center;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2); */
+}
+.circleImg{
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    /* border-radius: 50%; */
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: inset 0 0 0 9px #ffffff4d; */
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+body{
+    margin: 0;
+}
+.name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    padding-top: 40px;
+}
+.study{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    padding-top: 8px;
+}
+.study span{
+    color: #929292;
+}
+.listMenu{
+    padding-top: 50px;
+}
+.listUl li{
+    padding-bottom: 25px;
+    list-style-type: none;
+}
+.listUl li a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(75, 75, 75);
+    font-size: 14px;
+}
+.listUl li a:hover{
+    font-weight: 600;
+    color: rgb(75, 75, 75);
+    border-bottom: 1px solid rgb(75, 75, 75);
+    /* transition: 300ms; */
+}
+.man{
+    width: 300px;
+    height: 450px;
+    padding-top: 285px;
+}
+.rightSide{
+    flex:1;
+}
+.mainContent{
+    flex: 2;
+    padding-top: 300px;
+    padding-left: 50px;
+}
+.mainContent-wrapper{
+    /* flex-grow: 1; */
+    /* overflow: hidden; */
+    /* position: relative; */
+    margin-left: 300px;
+    flex: 2;
+    /* overflow: scroll; */
+    background-color: #f8f9fc;
+    max-width: 1219.2px;
+}
+#home{
+    display: flex;
+    flex-direction: row;
+}
+.role{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: fadeInTop 2s both;
+    /* transform: translateY(-200px);
+    opacity: 0;
+    transition: all 2s ease; */
+}
+/* .role.active{
+    transform: translateY(0px);
+    opacity: 1;
+} */
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.subRole{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: rgb(112, 111, 111);
+    padding-top: 20px;
+    animation: fadeInLeft 2s both;
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.LinkedIn{
+    padding-top: 30px;
+    animation: fadeInDown 2s both;
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.linkedin{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    font-size: 12px;
+    text-decoration: none;
+    border-style:solid;
+    border-width: 2px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.LinkedIn a:hover{
+    color: #4682A9;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+    }
+}
+.rightSide img{
+    animation: fadeInRight 2s both;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+}
+#about{
+    padding-top: 100px;
+}
+.subHead{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(158, 156, 156);
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: 5px;
+    padding-left: 50px;
+    /* -webkit-animation: fadeInLeft 1s both; */
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.subHead.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.subMainHead{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(75, 75, 75);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-left: 50px;
+    padding-top: 20px;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.subMainHead.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.boldMatter{
+    color: rgb(75, 75, 75);
+}
+.matter{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(158, 156, 156);
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-top: 40px;
+    padding-left: 50px;
+    margin-right: 120px;
+    line-height: 2;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.matter.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.aboutImages{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    margin-right: 120px;
+    justify-content: space-between;
+}
+.aboutImages img{
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.AIimg{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.AIimg.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.MLimg{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.MLimg.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.DLimg{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.DLimg.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.WDimg{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.WDimg.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.aboutImages img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#skills{
+    padding-top: 100px;
+}
+.totalrange{
+    margin-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 120px;
+    gap: 20px;
+}
+.leftrange{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightrange{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container{
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.CL{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.CL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.RL{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.RL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.container .skillbox{
+    width: 100%;
+    margin: 25px 0;
+}
+.skillbox .rangetitle{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(75, 75, 75);
+}
+.skillbox .skillbar{
+    width: 100%;
+    height: 8px;
+    border-radius: 12px;
+    margin-top: 6px;
+    background: #d6d6d6;
+}
+.skillbar .skillper{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 12px;
+    background-color: rgb(219, 60, 92);
+}
+.skillper .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgb(219, 60, 92);
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color:rgb(219, 60, 92);
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.skillbar .skillperML{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 80%;
+    border-radius: 12px;
+    background-color: darkorange;
+}
+.skillperML .tooltipML{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: darkorange;
+    z-index: 1;
+}
+.tooltipML::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color:darkorange;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.skillbar .skillperDL{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 12px;
+    background-color: rgb(13, 163, 13);
+}
+.skillperDL .tooltipDL{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgb(13, 163, 13);
+    z-index: 1;
+}
+.tooltipDL::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color:rgb(13, 163, 13);
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.skillbar .skillperPy{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 12px;
+    background-color: purple;
+}
+.skillperPy .tooltipPy{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: purple;
+    z-index: 1;
+}
+.tooltipPy::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color:purple;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.skillbar .skillperHt{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 60%;
+    border-radius: 12px;
+    background-color: cornflowerblue;
+}
+.skillperHt .tooltipHt{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: cornflowerblue;
+    z-index: 1;
+}
+.tooltipHt::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color:cornflowerblue;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.skillbar .skillperCs{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 60%;
+    border-radius: 12px;
+    background-color: palevioletred;
+}
+.skillperCs .tooltipCs{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 50;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: palevioletred;
+    z-index: 1;
+}
+.tooltipCs::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color:palevioletred;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+#education{
+    padding-top: 100px;
+}
+.summaryEdu{
+    margin-left: 50px;
+    padding-top: 100px;
+    margin-right: 120px;
+}
+.detBE{
+    border: 1px solid rgb(75, 75, 75);
+    margin: 20px 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.detL{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.detL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.detR{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.detR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.summaryHead{
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(77, 77, 77);
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+.detailsWrap{
+    padding-top: 30px;
+}
+details summary{
+    list-style-type: "+";
+    list-style-position: inside;
+}
+details[open] summary{
+    border-bottom: 1px solid rgb(75, 75, 75);
+    background-color: rgb(226, 226, 226);
+    list-style-type: "-";
+}
+.detailsCon{
+    padding-left: 50px;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 16;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: rgb(77, 77, 77);
+}
+.detailsSpan{
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(77, 77, 77);
+}
+#projects{
+    padding-top: 100px;
+}
+.projectWrapper{
+    padding-top: 100px;
+    margin-right: 120px;
+    margin-left: 50px;
+}
+.TR{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.TR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.TL{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.TL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+}
+.projectData{
+    display: flex;
+    flex-direction: row;
+}
+.projectContent{
+    flex: 2;
+}
+.emptyLeftDiv{
+    flex: 0.5;
+}
+.timeline{
+    flex: 0.5;
+}
+.emptyDiv{
+    flex: 2;
+}
+.projectTitle{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+    padding-bottom: 10px;
+}
+.projectInfo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 14px;
+    color: rgb(158, 156, 156);
+}
+.projectSkills{
+    padding-top: 10px;
+    display: flex;
+}
+.icon{
+    padding-right: 5px;
+}
+.skillsIn{
+    font-size: 14px;
+    color: rgb(158, 156, 156);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.calendar{
+    padding-top: 10px;
+    display: flex;
+    padding-bottom: 20px;
+}
+.time{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(158, 156, 156);
+    font-size: 14px;
+}
+.timeRounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 50%;
+}
+.timelineLine{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+    transform: translate(6px, -7px);
+}
+#certifications{
+    padding-top: 100px;
+}
+.certificationsWrapper{
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.certRow{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.certOuter{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 1px solid rgb(192, 192, 192);
+    flex: 1;
+}
+.certL{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.certL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.certM{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.certM.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.certR{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.certR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.certData{
+    padding: 30px 30px;
+}
+.certLogo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: rgb(75, 75, 75);
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.smallCertLogo{
+    font-size: 35px;
+    color: rgb(158, 156, 156);
+}
+.inCont{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: rgb(158, 156, 156);
+    font-weight: 100;
+}
+.credID{
+    color: rgb(75, 75, 75);
+}
+.inContL{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: rgb(158, 156, 156);
+    font-weight: 100;
+    text-decoration: none;
+    border: 1px solid rgb(158, 156, 156);
+    padding: 5px 10px;
+    border-radius: 100px;
+    width: 50%;
+}
+.inContL:hover{
+    border: 3px solid rgb(75, 75, 75);
+    color: rgb(75, 75, 75);
+}
+.inContWrap{
+    display: grid;
+    grid-template-rows: 60px 25px 25px 25px 80px 30px;
+}
+#photography{
+    padding-top: 100px;
+}
+.potraitWrap{
+    margin-left: 50px;
+    margin-right: 120px;
+    padding-top: 60px;
+}
+.potraitHeading{
+    text-align: center;
+}
+.potraitHead{
+    font-family: 'Tenor Sans', sans-serif;
+    color: rgb(75, 75, 75);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.photoHead{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.photoHead.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.potraitHeading span{
+    color: rgb(158, 156, 156);
+}
+.photoColWrap{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.photoRowWrap{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    gap: 250px;
+}
+.photoWrap{
+    text-align: center;
+}
+.photoL{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.photoL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.photoWrap a img{
+    width: 400px;
+    height: 450px;
+    border-radius: 7px;
+}
+.photoWrap a img:hover{
+    box-shadow: -20px 15px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(10px,-10px);
+    transition: 0.5s;
+}
+.photoWrap span h1{
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.photoWrap span h3{
+    text-align: center;
+    color: rgb(158, 156, 156);
+    font-family: 'Caveat', cursive;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.photoR{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.photoR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.landscapeWrap{
+    padding-top: 100px;
+    margin-left: 50px;
+    margin-right: 120px;
+}
+.landscapeHeading{
+    text-align: center;
+}
+.landscapeHeading h2{
+    font-family: 'Tenor Sans', sans-serif;
+    color: rgb(75, 75, 75);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.landscapeHeading h2 span{
+    color: rgb(158, 156, 156);
+}
+.photoLandRowWrap{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.landPhoto{
+    flex: 1;
+}
+.landL{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.landL.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.landR{
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.landR.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.landPhoto a img{
+    width: 500px;
+    height: 300px;
+    border-radius: 7px;
+    animation-duration: 0.5s;
+}
+.landPhoto a img:hover{
+    box-shadow: -20px 15px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(10px,-10px);
+    transition: 0.5s;
+}
+.LandText{
+    flex: 1;
+    /* text-align: center; */
+    position: relative;
+}
+.LandText span{
+    position: absolute;
+    top: 40%;
+    font-family: 'Caveat', cursive;
+    color: rgb(53, 53, 53);
+    font-size: 24px;
+    word-spacing: 2px;
+}
+#contact{
+    margin-top: 100px;
+    background-color: white;
+}
+.contactHead{
+    padding-top: 100px;
+    text-align: center;
+}
+.contactHead h3{
+    color: rgb(129, 129, 129);
+    padding-left: 0;
+}
+.contactHead h2{
+    color: rgb(75, 75, 75);
+    font-size: 35px;
+    padding-left: 0;
+}
+.socialMediaContact{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.socialMediaContact.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.socialMediaContact a img{
+    width: 25px;
+}
+.socialMediaContact a :hover{
+    background-color: #fffdd0;
+    border-radius: 5px;
+}
+.conclusion{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+.conclusion.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.conclusion span{
+    color: rgb(129, 129, 129);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    word-spacing: 5px;
+}
+.conclusion img{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 15px;
+}
+/* body{
+    overflow-x: hidden;
+} */
+
+/* Media */
+
+@media screen and (max-width: 1212px){
+    .mainContent-wrapper{
+        width: 912px;
+    }
+    .mainContent{
+        flex: 0.4;
+    }
+    .matter{
+        width: 600px;
+    }
+    .aboutImages{
+        width: 600px;
+    }
+    .aboutImages img{
+        width: 130px;
+        height: 130px;
+    }
+    .totalrange{
+        display: flex;
+        flex-direction: column;
+    }
+    .summaryEdu{
+        width: 600px;
+        margin: 0 0;
+    }
+    .detBE{
+        margin: 20px 0;
+        margin-left: 50px;
+    }
+    .projectWrapper{
+        width: 600px;
+    }
+    .certificationsWrapper{
+        width: 600px;
+    }
+    .certRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .certOuter{
+        width: 350px;
+    }
+    .photoColWrap{
+        width: 600px;
+    }
+    .photoRowWrap{
+        gap: 25px;
+        width: 600px;
+        justify-content: center;
+    }
+    .photoWrap{
+        width: 250px;
+    }
+    .photoWrap a img{
+        width: 250px;
+        height: 300px;
+    }
+    .singlePhotoRow{
+        display: grid;
+        justify-content: center;
+    }
+    .potraitHeading{
+        width: 600px;
+    }
+    .landscapeHeading{
+        width: 600px;
+    }
+    .photoLandRowWrap{
+        flex-direction: column;
+        text-align: center;
+    }
+    .landPhoto a img{
+        width: 400px;
+        height: 200px;
+    }
+    .LandText{
+        flex: 0;
+        width: 600px;
+        margin: 0;
+    }
+    .LandText span{
+        top: 0;
+        position: relative;
+    }
+    .photoLandRowWrapAlter{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactHead{
+        width: 912px;
+    }
+    .socialMediaContact{
+        width: 912px;
+    }
+    .conclusion{
+        width: 912px;
+    }
+}
+@media screen and (max-width: 900px){
+    .mainContent-wrapper{
+        width: 600px;
+    }
+    .mainContent{
+        flex: 0.3;
+        padding-top: 80px;
+    }
+    .rightSide{
+        flex: 0;
+        align-items: end;
+    }
+    .rightSide img{
+        width: 150px;
+        height: 300px;
+        padding-top: 230px;
+    }
+    .matter{
+        width: 350px;
+    }
+    .aboutImages{
+        width: 350px;
+    }
+    .aboutImages img{
+        width: 80px;
+        height: 80px;
+    }
+    .totalrange{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        max-width: 300px;
+    }
+    .summaryEdu{
+        width: 400px;
+        margin: 0 0;
+    }
+    .detBE{
+        margin: 20px 0;
+        margin-left: 50px;
+    }
+    .projectWrapper{
+        width: 350px;
+    }
+    .certificationsWrapper{
+        width: 350px;
+    }
+    .certRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .certOuter{
+        width: 350px;
+    }
+    .photoColWrap{
+        width: 350px;
+    }
+    .photoRowWrap{
+        gap: 25px;
+        width: 350px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: none;
+    }
+    .photoWrap{
+        width: 250px;
+    }
+    .photoWrap a img{
+        width: 250px;
+        height: 300px;
+    }
+    .singlePhotoRow{
+        display: grid;
+        justify-content: center;
+    }
+    .potraitHeading{
+        width: 350px;
+    }
+    .landscapeHeading{
+        width: 350px;
+    }
+    .photoLandRowWrap{
+        flex-direction: column;
+        text-align: center;
+    }
+    .landPhoto a img{
+        width: 400px;
+        height: 200px;
+    }
+    .LandText{
+        flex: 0;
+        width: 350px;
+        margin: 0;
+        text-align: center;
+    }
+    .LandText span{
+        top: 0;
+        position: relative;
+    }
+    .photoLandRowWrapAlter{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactHead{
+        width: 600px;
+    }
+    .socialMediaContact{
+        width: 600px;
+    }
+    .conclusion{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 600px){
+    .leftMenu{
+        display: none;
+    }
+    .mainContent-wrapper{
+        margin: 0;
+        width: 600px;
+    }
+    .mainContent{
+        flex: 0.3;
+        padding-top: 80px;
+    }
+    .rightSide{
+        flex: 0;
+        align-items: end;
+    }
+    .rightSide img{
+        width: 150px;
+        height: 300px;
+        padding-top: 230px;
+    }
+    .matter{
+        width: 350px;
+    }
+    .aboutImages{
+        width: 350px;
+    }
+    .aboutImages img{
+        width: 80px;
+        height: 80px;
+    }
+    .totalrange{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        max-width: 300px;
+    }
+    .summaryEdu{
+        width: 400px;
+        margin: 0 0;
+    }
+    .detBE{
+        margin: 20px 0;
+        margin-left: 50px;
+    }
+    .projectWrapper{
+        width: 350px;
+    }
+    .certificationsWrapper{
+        width: 350px;
+    }
+    .certRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .certOuter{
+        width: 350px;
+    }
+    .photoColWrap{
+        width: 350px;
+    }
+    .photoRowWrap{
+        gap: 25px;
+        width: 350px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: none;
+    }
+    .photoWrap{
+        width: 250px;
+    }
+    .photoWrap a img{
+        width: 250px;
+        height: 300px;
+    }
+    .singlePhotoRow{
+        display: grid;
+        justify-content: center;
+    }
+    .potraitHeading{
+        width: 350px;
+    }
+    .landscapeHeading{
+        width: 350px;
+    }
+    .photoLandRowWrap{
+        flex-direction: column;
+        text-align: center;
+    }
+    .landPhoto a img{
+        width: 400px;
+        height: 200px;
+    }
+    .LandText{
+        flex: 0;
+        width: 350px;
+        margin: 0;
+        text-align: center;
+    }
+    .LandText span{
+        top: 0;
+        position: relative;
+    }
+    .photoLandRowWrapAlter{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactHead{
+        width: 600px;
+    }
+    .socialMediaContact{
+        width: 600px;
+    }
+    .conclusion{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        width: 100%;
+    }
+    #home{
+        width: 400px;
+    }
+    .leftMenu{
+        display: none;
+    }
+    .mainContent-wrapper{
+        margin: 0;
+        width: 412px;
+    }
+    .mainContent{
+        flex: 0.7;
+        padding-top: 130px;
+        width: 412px;
+    }
+    .rightSide{
+        flex: 0.2;
+        align-items: end;
+    }
+    .rightSide img{
+        width: 150px;
+        height: 300px;
+        padding-top: 260px;
+    }
+    .matter{
+        width: 300px;
+    }
+    .aboutImages{
+        width: 300px;
+    }
+    .aboutImages img{
+        width: 60px;
+        height: 60px;
+    }
+    .totalrange{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        max-width: 300px;
+    }
+    .summaryEdu{
+        width: 300px;
+        margin: 0 0;
+    }
+    .detBE{
+        margin: 20px 0;
+        margin-left: 50px;
+        width: 300px;
+    }
+    .projectWrapper{
+        width: 300px;
+    }
+    .emptyLeftDiv{
+        flex: 0.2;
+    }
+    .timeline{
+        flex: 0.4;
+    }
+    .subMainHead{
+        width: 300px;
+    }
+    .certificationsWrapper{
+        width: 300px;
+    }
+    .certRow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .certOuter{
+        width: 300px;
+    }
+    .certData{
+        height: 100%;
+    }
+    .inContWrap{
+        grid-template-rows: 60px 25px 25px 25px 70px 30px;
+    }
+    .inContL{
+        width: 133px;
+    }
+    .photoColWrap{
+        width: 300px;
+        justify-items: center;
+    }
+    .photoRowWrap{
+        gap: 25px;
+        width: 300px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: none;
+    }
+    .photoWrap{
+        width: 250px;
+    }
+    .photoWrap a img{
+        width: 250px;
+        height: 300px;
+    }
+    .singlePhotoRow{
+        display: grid;
+        justify-content: center;
+    }
+    .potraitHeading{
+        width: 300px;
+    }
+    .landscapeHeading{
+        width: 300px;
+    }
+    .photoColWrap{
+        justify-content: center;
+    }
+    .photoLandRowWrap{
+        flex-direction: column;
+        text-align: center;
+    }
+    .landPhoto a img{
+        width: 250px;
+        height: 150px;
+    }
+    .LandText{
+        flex: 0;
+        width: 300px;
+        margin: 0;
+        text-align: center;
+    }
+    .LandText span{
+        top: 0;
+        position: relative;
+    }
+    .photoLandRowWrapAlter{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contactHead{
+        width: 412px;
+    }
+    .contactHead .subMainHead{
+        width: 412px;
+    }
+    .socialMediaContact{
+        width: 412px;
+    }
+    .conclusion{
+        width: 412px;
+    }
+}
