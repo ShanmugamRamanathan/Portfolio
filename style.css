@@ -1433,13 +1433,19 @@ details[open] summary{
         width: 300px;
     }
     .projectWrapper{
-        width: 300px;
+        width: 280px;
+    }
+    .projectContent{
+        flex: 0.5;
+    }
+    .emptyDiv{
+        flex: 0.5;
     }
     .emptyLeftDiv{
-        flex: 0.2;
+        flex: 0;
     }
     .timeline{
-        flex: 0.4;
+        flex: 0;
     }
     .subMainHead{
         width: 300px;
